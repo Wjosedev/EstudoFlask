@@ -15,7 +15,25 @@
         <p>Bem vindo a aula de flask</p>
     </div>
      
+    <a href = "/nova/"> link para nova página</a><br>
+
+    <a href = "{{url_for('novapagina')}}"> link para nova página</a>
     
+    <div>
+        <h1>Exemplo de Flask</h1>
+
+        <h2>Bem-vindo {{nome}}</h2>
+
+        <p>Idade{{idade}}</p>
+
+        <h3>Interesses</h3>
+        <ul>
+            {%for interesses in interesses%}
+                <li>{{interesses}}</li>
+            {%endfor%}
+
+        </ul>
+    </div>
     
 </body>
 </html>
